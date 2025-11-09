@@ -1,5 +1,4 @@
 #include "multithreading.h"
-
 /**
 * thread_entry - Thread entry point
 * @arg: Unused

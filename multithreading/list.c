@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "list.h"
-
 /**
  * node_create - Creates a Node structure and initializes it
  *
@@ -18,7 +17,6 @@ node_t *node_create(void *content)
 	node-> next = NULL;
 	return (node);
 }
-
 /**
  * list_add - Creates a Node and adds it to the back of a list
  *
@@ -40,7 +38,6 @@ node_t *list_add(list_t *list, void *content)
 	++list->size;
 	return (node);
 }
-
 /**
  * list_init - Initializes a list structure
  *
@@ -55,7 +52,6 @@ list_t *list_init(list_t *list)
 	list->size = 0;
 	return (list);
 }
-
 /**
  * list_destroy - Destroys the content of a list
  *
@@ -77,7 +73,6 @@ void list_destroy(list_t *list,  node_func_t free_func)
 	}
 	list->size = 0;
 }
-
 /**
  * list_each - Iterates over a list and calls a function for each node
  *
